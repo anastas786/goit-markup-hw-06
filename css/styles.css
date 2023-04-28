@@ -980,3 +980,6 @@ transition: transform var(--anim);
 display: block;
 margin: auto;
 }
+.label{
+  color: #31d0aa;
+}
