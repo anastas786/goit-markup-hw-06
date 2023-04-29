@@ -662,8 +662,8 @@ letter-spacing: 0.02em;
 color: var(--white-txt-cl);
 margin-bottom: 16px;
 line-height: 1.5;
-
 }
+
 
 
 .footer-social {
@@ -672,8 +672,21 @@ line-height: 1.5;
 .socials-list {
   display: flex;
   gap: 16px;
-
 }
+
+
+/**
+  |============================
+  | Subskribe box
+  |============================
+*/
+
+/* .subskribe-box {
+margin-left: 80px;
+} */
+
+
+
 
 .footer-container {
 display: flex;
@@ -946,6 +959,7 @@ opacity: 1;
 
 width: 408px;
 min-height: 584px;
+padding: 24px;
 
 border-radius: 4px;
 background-color: #FCFCFC;
@@ -980,6 +994,46 @@ transition: transform var(--anim);
 display: block;
 margin: auto;
 }
-.label{
-  color: #31d0aa;
+
+.modal-title {
+  display: block;
+  text-align: center;
+
+  margin-top: 72px;
+  margin-bottom: 16px;
+
 }
+
+.modal-form {}
+
+.modal-form-label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+
+}
+
+.modal-form-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-form-input {
+width: 360px;
+height: 40px;
+
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+  
+}
+
+.modal-form-icon {}
+
+.modal-form-message {}
+
+.modal-form-agreement {}
+
+.modal-form-agreement-text {}
+
+.modal-form-agreement-link {}
+
