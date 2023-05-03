@@ -657,14 +657,75 @@ color:var(--bck-clr-main);
 
 .footer-text-social {
 font-weight: 500;
+margin-left: 1px;
 font-size: 16px;
 letter-spacing: 0.02em;
 color: var(--white-txt-cl);
 margin-bottom: 16px;
 line-height: 1.5;
 }
+.footer-text-subskribe {
+  font-weight: 500;
+  margin-left: 1px;
+  margin-left: 80px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--white-txt-cl);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
 
 
+.footer-email-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-left: 80px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: var(--background);
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+
+  transition: outline-color var(--anim);
+
+}
+
+.footer-email-input::placeholder {
+  font-size: 12px;
+  color:#FFFFFF;
+  letter-spacing: 0.04em;
+  
+}
+
+.subskribe-btn {
+
+font-size: 16px;
+color: #FFFFFF;
+border: none;
+cursor: pointer;
+
+background-color: var(--background-btn);
+border-radius: 4px;
+display: flex;  
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+letter-spacing: 0.04em;
+gap: 16px;
+}
+
+.subskribe-box {
+  display: flex;
+  gap: 24px;
+
+}
+
+.send-icon {
+fill: #FFFFFF;
+}
 
 .footer-social {
 }
@@ -680,11 +741,6 @@ line-height: 1.5;
   | Subskribe box
   |============================
 */
-
-/* .subskribe-box {
-margin-left: 80px;
-} */
-
 
 
 
@@ -988,6 +1044,13 @@ cursor: pointer;
 background: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
 transition: transform var(--anim);
+
+transition: background-color var(--anim) ;
+}
+
+.modal-button:hover{
+background-color: var(--navi-focus-cl);
+fill: #FFFFFF;
 }
 
 .modal-icon {
@@ -1075,7 +1138,8 @@ outline-color: var(--accent-txt-cl);
 
 .modal-form-message::placeholder{
   font-size: 12px;
-  color: var(--navy-blue-modal);
+  color: rgba(46, 47, 66, 0.4);
+  letter-spacing: 0.04em;
 }
 
 .modal-form-agreement {
@@ -1093,17 +1157,50 @@ outline-color: var(--accent-txt-cl);
   width: 16px;
   height: 16px;
 
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: var(--anim);
 }
 
-.modal-form-agreement-box:checked{
-background-color:var(--navi-focus-cl);
-}
-.modal-icon-checked {
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
+.modal-form-agreement-box:checked {
+  background-color: var(--accent-bg-cl);
+  transition: var(--anim);
+}
+
+.modal-form-agreement-unchecked {
+  opacity: 1;
+  transition: var(--anim-fast);
+}
+
+input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-unchecked {
+  opacity: 0;
+}
+
+.modal-form-agreement-checked {
+  opacity: 0;
+  transition: var(--anim-fast);
+}
+
+input[type='checkbox']:checked+.modal-form-agreement-icon>.modal-form-agreement-checked {
+  opacity: 1;
+}
+
+
+
 .modal-form-agreement-text {
   font-size: 12px;
   letter-spacing: 0.04em;
@@ -1113,5 +1210,7 @@ margin-bottom: 24px;
 margin-top: 16px;
 }
 
-.modal-form-agreement-link {}
+.modal-form-agreement-link {
+  color: var(--background-btn);
+}
 
