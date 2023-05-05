@@ -709,6 +709,7 @@ font-size: 16px;
 color: #FFFFFF;
 border: none;
 cursor: pointer;
+font-weight: 500;
 
 background-color: var(--background-btn);
 border-radius: 4px;
@@ -1019,7 +1020,7 @@ opacity: 1;
 width: 408px;
 min-height: 584px;
 padding: 24px;
-padding-top: 82px;
+padding-top: 72px;
 
 border-radius: 4px;
 background-color: #FCFCFC;
@@ -1086,14 +1087,18 @@ margin: auto;
 .modal-form-label-agreement {
 display: flex;
 gap: 8px;
-justify-content: center;
+line-height: 1.17;
 transition: var(--anim);
 align-items: center;
 }
 
 .modal-form-field {
   position: relative;
-  margin-bottom: 8px;
+ 
+}
+
+.modal-form-item {
+margin-bottom: 8px;
 }
 
 .modal-form-input {
@@ -1162,7 +1167,6 @@ outline-color: var(--accent-txt-cl);
 
 .modal-form-agreement-box {
 
-  
 }
 
 
@@ -1194,7 +1198,7 @@ outline-color: var(--accent-txt-cl);
 .modal-form-agreement-text {
   font-size: 12px;
   letter-spacing: 0.04em;
-  width: 338px;
+
   color: #8E8F99;
   align-self: flex-end;
 
